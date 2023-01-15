@@ -35,15 +35,9 @@
   --color-grey-5: #f8f8f8;
   --color-grey-6: #12181b;
 }
-
-/*
-  #GAMBIARRA PRA ALTERAR A COR DA BARRA DE ROLAGEM
-*/
-
 *::-webkit-scrollbar {
   width: 12px;
 }
-
 *::-webkit-scrollbar-track {
   background: ##191d2b;
 }
@@ -52,7 +46,7 @@
   background-color: #24aa63;
   border-radius: 20px;
 }
-/*Finalizada gambiarra*/
+
 body {
   background-color: var(--color-primary);
   font-family: 'Poppins', sans-serif;
@@ -60,22 +54,18 @@ body {
   color: var(--color-white);
   -webkit-transition: all .4s ease-in-ou##24aa63t;
   transition: all .4s ease-in-out;
-
 }
-
 a {
   display: inline-block;
   text-decoration: none;
   color: inherit;
   font-family: inherit;
 }
-
 header {
   min-height: 100vh;
   color: var(--color-white);
   overflow: hidden;
 }
-
 section {
   min-height: 100vh;
   width: 100%;
@@ -84,7 +74,6 @@ section {
   top: 0;
   padding: 3rem 18rem;
 }
-
 .section {
   -webkit-transform: translateY(-100%) scale(0);
           transform: translateY(-100%) scale(0);
@@ -92,44 +81,37 @@ section {
   transition: all .4s ease-in-out;
   background-color: var(--color-primary);
 }
-
 .sec1 {
   display: none;
   -webkit-transform: translateY(0) scale(1);
           transform: translateY(0) scale(1);
   padding: 0 !important;
 }
-
 .sec2 {
   display: none;
   -webkit-transform: translateY(0) scale(1);
           transform: translateY(0) scale(1);
 }
-
 .sec3 {
   display: none;
   -webkit-transform: translateY(0) scale(1);
           transform: translateY(0) scale(1);
 }
-
 .sec4 {
   display: none;
   -webkit-transform: translateY(0) scale(1);
           transform: translateY(0) scale(1);
 }
-
 .sec5 {
   display: none;
   -webkit-transform: translateY(0) scale(1);
           transform: translateY(0) scale(1);
 }
-
 .active {
   display: block;
   -webkit-animation: scaleAnim 1s ease-in-out;
           animation: scaleAnim 1s ease-in-out;
 }
-
 @-webkit-keyframes scaleAnim {
   0% {
     -webkit-transform: translateY(-100%) scaleY(0);
@@ -281,8 +263,8 @@ section {
 
 .header-content .left-header .image {
   border-radius: var(--br-sm-2);
-  height: 93%;
-  width: 65%;
+  height: 80%;
+  width: 60%;
   margin-left: 4rem;
   background-color: var(--color-black);
   -webkit-transition: all .4s ease-in-out;
@@ -422,7 +404,7 @@ section {
 .about-stats {
   padding-bottom: 4rem;
 }
-
+/*aqui começa*/
 .about-stats .progress-bars {
   display: -ms-grid;
   display: grid;
@@ -431,7 +413,7 @@ section {
   grid-gap: 2rem;
 }
 
-.about-stats .progress-bars .progress-bar {
+.about-stats  {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -441,12 +423,12 @@ section {
           flex-direction: column;
 }
 
-.about-stats .progress-bars .progress-bar .prog-title {
+.about-stats  .prog-title {
   text-transform: uppercase;
   font-weight: 500;
 }
 
-.about-stats .progress-bars .progress-bar .progress-con {
+.about-stats  .progress-con {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -455,11 +437,11 @@ section {
           align-items: center;
 }
 
-.about-stats .progress-bars .progress-bar .progress-con .prog-text {
+.about-stats .progress-con .prog-text {
   color: var(--color-grey-2);
 }
 
-.about-stats .progress-bars .progress-bar .progress-con .progress {
+.about-stats .progress-con .progress {
   width: 100%;
   height: .45rem;
   background-color: var(--color-grey-4);
@@ -467,7 +449,7 @@ section {
   position: relative;
 }
 
-.about-stats .progress-bars .progress-bar .progress-con .progress span {
+.about-stats .progress-con .progress span {
   position: absolute;
   top: 0;
   left: 0;
@@ -477,32 +459,9 @@ section {
   transition: all .4s ease-in-out;
   width: 60%;
 }
-/*bar */
-.about-stats .progress-bars .progress-bar .progress-con .progress .html {
-  width: 85%;
-}
-
-.about-stats .progress-bars .progress-bar .progress-con .progress .css {
-  width: 75%;
-}
-
-.about-stats .progress-bars .progress-bar .progress-con .progress .java {
-  width: 40%;
-}
-
-.about-stats .progress-bars .progress-bar .progress-con .progress .react {
-  width: 76%;
-}
-
-.about-stats .progress-bars .progress-bar .progress-con .progress .linux {
-  width: 100%;
-}
-
-.about-stats .progress-bars .progress-bar .progress-con .progress .python {
-  width: 5%;
-}
 
 .stat-title {
+
   text-transform: uppercase;
   font-size: 1.4rem;
   text-align: center;
@@ -511,6 +470,7 @@ section {
 }
 
 .stat-title::before {
+  align-items: center;
   content: '';
   position: absolute;
   left: 50%;
@@ -521,6 +481,7 @@ section {
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
 }
+/*aqui termina*/
 
 /*Timeline*/
 .timeline {
